@@ -57,7 +57,7 @@ const T * DisplayArr<T>::getAddress(T arr[], int index){
  * @param size
  */
 template<typename T>
-void DisplayArr<T>::printMetaArray(int arr[], int size){ // what happens when Display:: is removed?
+void DisplayArr<T>::printMetaArray(T arr[], int size){ // what happens when Display:: is removed?
     int mem_size = getArrMemSize(arr, size);
     int int_size = sizeof(arr[0]);
     printf("Array has %i number of %s. Each %s is worth %i bytes, totaling up to %i bytes of memory.\n", size, data_type.c_str(), data_type.c_str(), int_size, mem_size);
